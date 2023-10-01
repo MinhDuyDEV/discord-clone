@@ -34,7 +34,6 @@ const FileUpload = ({ onChange, value, endpoint }: FileUploadProps) => {
       endpoint={endpoint}
       onClientUploadComplete={(res) => {
         onChange(res?.[0].url);
-        console.log("Upload Completed");
       }}
       onUploadError={(error: Error) => {
         console.log(`ERROR! ${error.message}`);
