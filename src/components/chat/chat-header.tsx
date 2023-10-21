@@ -12,6 +12,8 @@ interface ChatHeaderProps {
 }
 
 const ChatHeader = ({ serverId, name, type, imageUrl }: ChatHeaderProps) => {
+  console.log("🚀 ~ ChatHeader ~ type:", type);
+  console.log("🚀 ~ ChatHeader ~ name:", name);
   return (
     <div className="flex items-center h-12 px-3 font-semibold border-b-2 text-md border-neutral-200 dark:border-neutral-800">
       <MobileToggle serverId={serverId} />
